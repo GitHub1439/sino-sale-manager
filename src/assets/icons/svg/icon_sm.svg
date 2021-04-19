@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #879bba;
+      }
+
+      .cls-4 {
+        fill: #879bba;
+        font-size: 13px;
+        font-family: MicrosoftYaHeiUI, Microsoft YaHei UI;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="矩形_1095" data-name="矩形 1095" class="cls-1" width="16" height="16" transform="translate(1260 172)"/>
+    </clipPath>
+  </defs>
+  <g id="icon_sm" class="cls-2" transform="translate(-1260 -172)">
+    <g id="组_382" data-name="组 382">
+      <g id="椭圆_131" data-name="椭圆 131" class="cls-3" transform="translate(1260 172)">
+        <circle class="cls-5" cx="8" cy="8" r="8"/>
+        <circle class="cls-6" cx="8" cy="8" r="7.5"/>
+      </g>
+      <text id="_" data-name="？" class="cls-4" transform="translate(1278 185)"><tspan x="-13" y="0">？</tspan></text>
+    </g>
+  </g>
+</svg>

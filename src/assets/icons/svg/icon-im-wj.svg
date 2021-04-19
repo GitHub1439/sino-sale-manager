@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: currentColor;
+      }
+    </style>
+  </defs>
+  <g id="icon_wj" transform="translate(-1386.5 -595.5)">
+    <rect id="矩形_806" data-name="矩形 806" class="cls-1" width="32" height="32" transform="translate(1386.5 595.5)"/>
+    <path id="路径_1143" data-name="路径 1143" class="cls-2" d="M1413.5,599.5v22a2,2,0,0,1-2,2h-18a2,2,0,0,1-2-2v-22Z"/>
+    <path id="路径_1144" data-name="路径 1144" class="cls-3" d="M1401.371,603.333a2.159,2.159,0,0,0-3.052-.005h0l-.061.042a.188.188,0,0,1-.2-.042l-.223-.193a2.155,2.155,0,0,0-2.83,3.237l0,0,.134.134,2.733,2.735a.446.446,0,0,0,.631,0l0,0,2.864-2.864a2.151,2.151,0,0,0,0-3.042l0,0Z"/>
+    <rect id="矩形_807" data-name="矩形 807" class="cls-3" width="5" height="2" rx="1" transform="translate(1405 610)"/>
+    <rect id="矩形_808" data-name="矩形 808" class="cls-3" width="8" height="2" rx="1" transform="translate(1402 614)"/>
+    <rect id="矩形_809" data-name="矩形 809" class="cls-3" width="11" height="2" rx="1" transform="translate(1399 618)"/>
+  </g>
+</svg>

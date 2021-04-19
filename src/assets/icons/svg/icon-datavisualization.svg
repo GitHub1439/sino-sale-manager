@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+      }
+
+      .cls-3, .cls-4 {
+      }
+
+      .cls-3 {
+      }
+
+      .cls-5 {
+      }
+
+      .cls-6 {
+      }
+    </style>
+  </defs>
+  <g id="组_127" data-name="组 127" transform="translate(-32 -260)">
+    <rect id="矩形_1" data-name="矩形 1" class="cls-1" width="16" height="16" transform="translate(32 260)"/>
+    <g id="组_97" data-name="组 97" transform="translate(79 -4903)">
+      <g id="组_96" data-name="组 96">
+        <rect id="矩形_135" data-name="矩形 135" class="cls-2" width="14" height="10" rx="2" transform="translate(-46 5165)"/>
+        <g id="矩形_136" data-name="矩形 136" class="cls-3" transform="translate(-45 5176)">
+          <rect class="cls-5" width="12" height="1" rx="0.5"/>
+          <rect class="cls-6" x="0.5" y="0.5" width="11"/>
+        </g>
+      </g>
+      <rect id="矩形_137" data-name="矩形 137" class="cls-4" width="1" height="5" rx="0.5" transform="matrix(0.545, 0.839, -0.839, 0.545, -39.67, 5167.55)"/>
+      <rect id="矩形_139" data-name="矩形 139" class="cls-4" width="1" height="4" rx="0.5" transform="matrix(0.839, -0.545, 0.545, 0.839, -40.509, 5168.095)"/>
+      <rect id="矩形_138" data-name="矩形 138" class="cls-4" width="1" height="5" rx="0.5" transform="matrix(0.545, 0.839, -0.839, 0.545, -34.681, 5167.888)"/>
+    </g>
+  </g>
+</svg>

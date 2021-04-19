@@ -1,0 +1,16 @@
+<svg id="ic_name" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+         
+        opacity: 0;
+      }
+
+      .cls-2 {
+         
+      }
+    </style>
+  </defs>
+  <rect id="矩形_769_拷贝" data-name="矩形 769 拷贝" class="cls-1" width="20" height="20"/>
+  <path id="ic_name-2" data-name="ic_name" class="cls-2" d="M1345.064,3167.034a6.1,6.1,0,1,0-7.158,0,8.819,8.819,0,0,0-4.921,7.965,1,1,0,0,0,2,0,6.507,6.507,0,1,1,13,0,1,1,0,0,0,2,0A8.819,8.819,0,0,0,1345.064,3167.034Zm-7.679-4.926a4.1,4.1,0,1,1,4.1,4.1A4.1,4.1,0,0,1,1337.385,3162.108Z" transform="translate(-1332 -3156)"/>
+</svg>

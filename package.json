@@ -1,0 +1,90 @@
+{
+  "name": "medical",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "min.wan"
+  },
+  "scripts": {
+    "dev": "vue-cli-service serve --open",
+    "build": "vue-cli-service build --report && cross-env env_config=production gulp",
+    "build:test": "vue-cli-service build --report && cross-env env_config=test gulp",
+    "build:preview": "vue-cli-service build --report && cross-env env_config=preview gulp",
+    "happypack": "cross-env npm_config_pack=true vue-cli-service build && cross-env env_config=production gulp",
+    "lint": "eslint --ext .js,.vue src",
+    "lint-fix": "eslint --fix --ext .js,.vue src",
+    "compile": "babel src -d dist-es5"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "axios": "^0.21.1",
+    "better-scroll": "^2.0.5",
+    "core-js": "^3.6.4",
+    "cos-js-sdk-v5": "^0.5.27",
+    "crypto-js": "^4.0.0",
+    "element-ui": "^2.13.1",
+    "js-base64": "^3.4.4",
+    "js-file-download": "^0.4.12",
+    "js-md5": "^0.7.3",
+    "kindeditor": "^4.1.10",
+    "mockjs": "^1.1.0",
+    "moment": "^2.27.0",
+    "nprogress": "^0.2.0",
+    "qrcode": "^1.4.4",
+    "quill": "^1.3.7",
+    "signature_pad": "^3.0.0-beta.3",
+    "socket.io-client": "^2.3.1",
+    "stompjs": "^2.3.3",
+    "tim-js-sdk": "^2.7.6",
+    "trtc-js-sdk": "^4.6.0",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.18.1",
+    "vue-print-nb": "^1.6.0",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.1.6",
+    "vuedraggable": "^2.24.1",
+    "vuex": "^3.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-router": "~4.3.0",
+    "@vue/cli-plugin-vuex": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "babel-eslint": "^10.1.0",
+    "compression-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.2",
+    "debug": "^4.2.0",
+    "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "happypack": "^5.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.10",
+    "node-sass": "^4.9.0",
+    "pre-commit": "^1.2.2",
+    "sass-loader": "^7.0.1",
+    "svg-sprite-loader": "^5.0.0",
+    "terser-webpack-plugin": "^3.0.4",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "npm run lint"
+    ]
+  }
+}

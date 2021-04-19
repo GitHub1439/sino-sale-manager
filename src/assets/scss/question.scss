@@ -1,0 +1,315 @@
+.paddingB30 {
+    padding-bottom: 30px;
+}
+.question-wrap {
+    margin: 20px 30px;
+    .question-header {
+        padding: 20px 25px 10px 25px;
+        margin-bottom: 10px;
+        background: #fff;
+        border-radius: 2px;
+        box-shadow: 0 0 15px rgba(0,0,0,.1);
+        .question-title {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: bold;
+            padding: 10px 5px;
+        }
+        .question-desc {
+            font-size: 16px;
+            margin: 15px 0;
+            padding: 5px;
+        }
+    }
+    .question-list {
+        &.dragwrap-list {
+            .sur-qus-action, .sur-option-list {
+                display: none;
+            }
+        }
+        .element-item-pane {
+            background: #fff;
+            border: 2px solid transparent;
+            margin-bottom: 10px;
+            border-radius: 2px;
+            position: relative;
+            .dragclass {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 22px;
+                visibility: hidden;
+                opacity: 0;
+                transition: all .3s;
+            }
+            &:hover {
+                .dragclass {
+                    cursor: move;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            &.active {
+                border: 2px solid #0073cf;
+                box-shadow: 0 0 15px rgba(0,0,0,.1);
+            }
+            &.ghost {
+                opacity: 0.2;
+                outline: 2px dashed #000;
+                filter: blur(1px);
+            }
+            &.sortable-drag,  &.sortable-fallback {
+                opacity: 1;
+                height: 80px !important;
+                background: #ccc;
+                .dragclass {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+        .sur-qus-box {
+            width: 70px;
+            text-align: center;
+        }
+        .sur-qus-action {
+            display: flex;
+            flex-direction: column;
+            // visibility: hidden;
+            // opacity: 0;
+            transition: all .3s;
+            margin-top: 14px;
+            & > span {
+                font-size: 18px;
+                margin: 0 0 15px 0;
+                cursor: pointer;
+                color: #666;
+                &:hover {
+                    color: #0073cf;
+                    font-weight: bold;
+                }
+            }
+        }
+        .sur-item {
+            display: flex;
+            padding: 20px 60px 20px 0;
+            &:hover {
+                .sur-qus-action {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            .sur-number {
+                padding: 5px 0;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .sur-content {
+                flex: 1;
+                padding-right: 30px;
+            }
+            .sur-title {
+                font-size: 16px;
+                font-weight: bold;
+                word-break: break-all;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+            .sur-option-list {
+                margin-right: 160px;
+                &[data-column='2']{
+                    li {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 50%;
+                    }
+                }
+                &[data-column='3']{
+                    li {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 33.333%;
+                    }
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        margin: 0 0 5px 0;
+                        padding: 2px 5px;
+                        .sur-item-wrap {
+                            display: flex;
+                            align-items: center;
+                        }
+                        &:hover {
+                            box-shadow: 0 0 30px rgba(0, 0, 0,0.19);
+                            // border-radius: 5px;
+                            .sur-option-astion {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        .sur-option-input {
+                            display: inline-block;
+                            width: 100px;
+                            height: 30px;
+                            border: 1px solid #DCDFE6;
+                        }
+                        .sur-option-astion {
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all .3s;
+                        }
+                    }
+                    .sur-tooltip {
+                        margin: 0 2px;
+                        font-size: 18px;
+                        // color: #338fd9;
+                        cursor: pointer;
+                        &:hover {
+                            color: #0073cf;
+                            font-weight: bold;
+                        }
+                    }
+                    .label {
+                        padding:5px 3px;
+                        flex: 1;
+                        word-break: break-all;
+                    }
+                    .label-input {
+                        width: 100px;
+                        margin: 0 5px;
+                        display: flex;
+                    }
+                    &.sur-radio {
+                        .icon {
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            border: 1px solid #aaa;
+                            margin-right: 5px;
+                        }
+                    }
+                    &.sur-checkbox {
+                        .icon {
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 2px;
+                            border: 1px solid #aaa;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .sur-group {
+            display: flex;
+            flex-direction: column;
+            label {
+                margin: 7px 0;
+            }
+        }
+        .sur-action-wrap {
+            margin-top: 10px;
+            padding: 10px 0;
+            .sur-action-btnitem {
+                margin-right: 10px;
+            }
+        }
+    }
+    .sur-hoverbg {
+        line-height: 20px;
+        caret-color: #0073cf;
+        &:focus {
+            outline: 1px dashed #ccc;
+            box-shadow: 0 0 15px rgba(0, 0, 0,0.14);
+            background: #FAECD8;
+        }
+        &:hover {
+            cursor: pointer;
+            outline: 1px dashed#ccc;
+            background: #FAECD8;
+            box-shadow: 0 0 15px rgba(0, 0, 0,0.14);
+        }
+    }
+    &.preview-page {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: #fff;
+        .question-header {
+            padding: 20px 0 10px 15px
+        }
+        .element-item-pane {
+            padding: 0 20px;
+            border: none;
+        }
+        .sur-qus-box {
+            width: 70px;
+        }
+        .sur-title {
+            padding: 0 !important;
+            line-height: 22px;
+        }
+        .sur-option-list {
+            margin-right: 0 !important;
+            padding-left: 10px;
+            width: 97%;
+        }
+        .sur-item {
+            padding-right: 0;
+        }
+        .sur-content {
+            padding-right: 0 !important;
+        }
+      
+        .el-textarea__inner {
+            outline:none;
+            box-shadow:none;
+            appearance:none;
+            height: 70px;
+        }
+        .el-checkbox-group,
+        .el-radio-group {
+            width: 100%;
+        }
+        .el-checkbox,
+        .el-radio {
+            height: auto !important;
+            padding: 0;
+        }
+        .el-checkbox__label,
+        .el-radio__label {
+            display: inline-grid;
+            white-space: pre-line;
+            word-wrap: break-word;
+            overflow: hidden;
+            line-height: 18px;
+        }
+    }
+}
+
+.sur-popover {
+    .sur-action-popover-title {
+        margin-bottom: 5px;
+        .title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    }
+    .sur-popover-btn {
+        margin-top: 10px;
+    }
+    .sur-popover-btn {
+        text-align: right;
+    }
+}
+.error-msg {
+    color: red;
+    margin-top: 10px;
+    &.mgl10 {
+        margin-left: 10px;
+    }
+}

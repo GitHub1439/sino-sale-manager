@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0073cf;
+      }
+    </style>
+  </defs>
+  <path id="减去_1" data-name="减去 1" class="cls-1" d="M1430,866a11,11,0,1,1,7.779-3.222A10.928,10.928,0,0,1,1430,866Zm-4-12a1,1,0,0,0,0,2h3v3a1,1,0,1,0,2,0v-3h3a1,1,0,0,0,0-2h-3v-3a1,1,0,0,0-2,0v3Z" transform="translate(-1419 -844)"/>
+</svg>
